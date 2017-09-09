@@ -1,0 +1,5 @@
+{
+    "file": "/Users/user1/Downloads/fileToSync.txt",
+    "server": "user1@1.2.3.4:/src/fileToSync.txt",
+    "password": "user1_password"
+}
