@@ -10,6 +10,8 @@ class FileSyncHandler(FileSystemEventHandler):
         self.fileName = fileName
         self.serverName = serverName
         self.password = password
+        print "Download initial file from server"
+        os.system('sshpass -p ' + self.password + ' scp -o StrictHostKeyChecking=no ' + self.serverName + ' ' + self.fileName)
         print "File to sync with server: ", fileName
 
     def on_modified(self, event):
